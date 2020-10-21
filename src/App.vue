@@ -19,7 +19,5 @@ export default {
 #app {
   width: 100%;
   height: max-content;
-
-  position: relative;
 }
 </style>

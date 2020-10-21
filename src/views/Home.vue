@@ -12,6 +12,7 @@ export default {};
 <style lang="scss">
 main {
   width: max-content;
+  height: max-content;
   margin-top: 70px;
   padding-top: 50px;
 }
