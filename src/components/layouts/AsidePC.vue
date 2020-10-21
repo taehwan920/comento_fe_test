@@ -26,5 +26,6 @@ export default {};
   font-size: 22px;
   line-height: 1.14;
   text-align: center;
+  cursor: pointer;
 }
 </style>
