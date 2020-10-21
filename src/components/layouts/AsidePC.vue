@@ -18,8 +18,13 @@ export default {};
 .login > button {
   width: 100%;
   height: 60px;
+  outline: none;
+  border: none;
   border-radius: 5px;
   background: $comento-green;
   color: #fff;
+  font-size: 22px;
+  line-height: 1.14;
+  text-align: center;
 }
 </style>

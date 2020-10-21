@@ -1,12 +1,18 @@
 <template>
   <main>
-    <div class="contentWrapper"></div>
-    <h1>난 feed 홈이다</h1>
+    <div class="contentWrapper">
+      <AsidePC />
+    </div>
   </main>
 </template>
 
 <script>
-export default {};
+import AsidePC from "../components/layouts/AsidePC";
+export default {
+  components: {
+    AsidePC,
+  },
+};
 </script>
 
 <style lang="scss">

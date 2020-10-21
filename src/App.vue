@@ -16,6 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/basic.scss";
+
 #app {
   width: 100%;
   height: max-content;
