@@ -38,6 +38,7 @@ export default {};
 .sort-item {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .item-left {
