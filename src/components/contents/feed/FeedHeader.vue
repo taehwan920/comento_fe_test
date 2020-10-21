@@ -10,9 +10,7 @@
         <span class="sort__txt"> 내림차순 </span>
       </li>
     </ul>
-    <div>
-      <span></span>
-    </div>
+    <button class="filter-btn">필터</button>
   </div>
 </template>
 
@@ -30,6 +28,7 @@ export default {};
   align-items: center;
 }
 
+// 정렬 버튼
 .feed__sort {
   width: max-content;
   height: max-content;
@@ -65,5 +64,22 @@ export default {};
 
 .txt-selected {
   color: black;
+}
+
+//필터 버튼
+.filter-btn {
+  width: 48px;
+  height: 24px;
+  border-radius: 3px;
+  border: solid 1px #e1e4e7;
+  background: #fff;
+  font-weight: normal;
+  color: #adb5bd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-btn:focus {
+  outline: none;
 }
 </style>
