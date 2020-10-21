@@ -50,7 +50,7 @@ export default {};
   height: 6px;
   border-radius: 50%;
   margin-right: 5px;
-  background: #e1e4e7;
+  background: $weak-gray;
 }
 
 .ball-selected {
@@ -60,11 +60,11 @@ export default {};
 .sort__txt {
   font-size: 13px;
   font-weight: normal;
-  color: #adb5bd;
+  color: $strong-gray;
 }
 
 .txt-selected {
-  color: black;
+  color: $content-black;
 }
 
 //필터 버튼
@@ -72,10 +72,10 @@ export default {};
   width: 48px;
   height: 24px;
   border-radius: 3px;
-  border: solid 1px #e1e4e7;
+  border: solid 1px $weak-gray;
   background: #fff;
   font-weight: normal;
-  color: #adb5bd;
+  color: $strong-gray;
   text-align: center;
   cursor: pointer;
 }
