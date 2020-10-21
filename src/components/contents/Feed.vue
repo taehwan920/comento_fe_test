@@ -1,17 +1,19 @@
 <template>
   <section class="feed">
     <FeedHeader />
-    <article></article>
+    <FeedContent />
     <article></article>
   </section>
 </template>
 
 <script>
 import FeedHeader from "./feed/FeedHeader";
+import FeedContent from "./feed/FeedContent";
 
 export default {
   components: {
     FeedHeader,
+    FeedContent,
   },
 };
 </script>
