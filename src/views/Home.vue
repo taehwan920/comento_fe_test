@@ -1,8 +1,6 @@
 <template>
   <main>
-    <div class="contentWrapper">
-      <AsidePC />
-    </div>
+    <AsidePC />
   </main>
 </template>
 
@@ -18,8 +16,12 @@ export default {
 <style lang="scss">
 main {
   width: max-content;
+  max-width: 1140px;
   height: max-content;
   margin-top: 70px;
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
