@@ -39,10 +39,10 @@ export default {};
 //카테고리 파트
 .content__category {
   width: 100%;
-  height: max-content;
-  padding-bottom: 12px;
+  height: 20px;
+  padding-bottom: 10px;
   border-bottom: solid 1px $weak-gray;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,8 @@ export default {};
 // 유저 id 및 날짜 파트
 .content__info {
   width: 100%;
-  margin-bottom: 25px;
+  height: 20px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 
@@ -86,9 +87,9 @@ export default {};
 // 제목 파트
 .content__title {
   width: 100%;
-  height: max-content;
+  height: 28px;
   padding-right: 49px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .content__title > h1 {
@@ -103,6 +104,7 @@ export default {};
 // 글 내용 파트
 .content__content {
   width: 100%;
+  height: 25px;
   padding-right: 49px;
 }
 
