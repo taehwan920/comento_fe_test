@@ -1,5 +1,5 @@
 <template>
-  <article class="feed-content">
+  <article class="item-container feed-content">
     <div class="content__category">
       <span class="category__name">category name</span>
       <span class="category__content-id">content id</span>
@@ -27,11 +27,8 @@ export default {};
 
 <style lang="scss">
 .feed-content {
-  width: 100%;
-  height: max-content;
   padding: 25px 30px 21px 30px;
-  border-radius: 5px;
-  border: solid 1px $weak-gray;
+
   display: flex;
   flex-direction: column;
   background: #fff;
