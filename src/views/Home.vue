@@ -1,5 +1,6 @@
 <template>
   <main>
+    <div class="contentWrapper"></div>
     <h1>난 feed 홈이다</h1>
   </main>
 </template>
@@ -11,6 +12,7 @@ export default {};
 <style lang="scss">
 main {
   width: max-content;
-  padding-top: 70px;
+  margin-top: 70px;
+  padding-top: 50px;
 }
 </style>
