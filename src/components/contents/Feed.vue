@@ -17,6 +17,10 @@ export default {
     FeedContent,
     FeedAd,
   },
+  mounted() {
+    const store = this.$store;
+    store.commit("getFeedContents");
+  },
 };
 </script>
 
