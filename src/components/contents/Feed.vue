@@ -17,9 +17,13 @@ export default {
     FeedContent,
     FeedAd,
   },
-  mounted() {
+  created() {
     const store = this.$store;
-    store.commit("getFeedContents");
+    store.commit("fetchFeedContents");
+    store.commit("fetchFeedAds");
+    console.log(store);
+    console.log(store.getters.getFeedContents);
+    console.log(store.getters.getFeedAds);
   },
 };
 </script>

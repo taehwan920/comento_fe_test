@@ -8,12 +8,12 @@ export default new Vuex.Store({
   state: {
     fetchEndPoint: `https://problem.comento.kr`,
     feedItemCache: [],
-    fetchedDataNumber: 0,
+    fetchedNumberOfPages: 0,
     fetchedFeedContents: [],
     fetchedFeedAds: [],
   },
   mutations: {
-    getFeedContents: async (state) => {
+    fetchFeedContents: async (state) => {
       const url = `https://problem.comento.kr/api/`;
 
       const categoryUrl = `category`;
@@ -35,12 +35,26 @@ export default new Vuex.Store({
 
       return state.fetchedFeedContents = fetchedContent.data;
     },
-    getFeedAds() {
+    fetchFeedAds: async (state) => {
+      const adPage = 1;
+      const adLimit = 5;
 
+      const url = `https://problem.comento.kr/api/ads?page=${adPage}&limit=${adLimit}`;
+
+      const fetchedAds = await fetch(url, {
+        headers: { 'Accept': 'application/json' },
+      }).then(response => response.json());
+
+      return state.fetchedFeedAds = fetchedAds.data;
     },
   },
   getters: {
-
+    getFeedContents: (state) => {
+      return state.fetchedFeedContents;
+    },
+    getFeedAds: (state) => {
+      return state.fetchedFeedAds;
+    },
   },
   actions: {
   },
