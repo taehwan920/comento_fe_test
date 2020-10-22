@@ -9,10 +9,14 @@
       </div>
       <div class="ad-content__ad-txt">
         <div class="ad-txt__title">
-          <h1>title</h1>
+          <h1>
+            titletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitletitle
+          </h1>
         </div>
         <div class="ad-txt__content">
-          <div>content</div>
+          <div>
+            contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +35,7 @@ export default {};
   font-weight: normal;
 }
 
-// 헤더 파트
+// 광고 헤더 파트
 .ad-header {
   width: 100%;
   height: max-content;
@@ -64,6 +68,7 @@ export default {};
   width: calc(100% - 344.5px);
   display: flex;
   flex-direction: column;
+  line-height: 1.56;
 }
 
 .ad-txt__title {
@@ -73,9 +78,16 @@ export default {};
 }
 
 .ad-txt__title > h1 {
+  width: 100%;
   font-size: 18px;
   color: $title-black;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 
 .ad-txt__content {
@@ -84,7 +96,14 @@ export default {};
 }
 
 .ad-txt__content > div {
+  width: 100%;
   font-size: 16px;
   color: $content-black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 </style>
